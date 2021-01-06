@@ -19,7 +19,6 @@ futures-sink = "0.3"
 lazy_static = "1"
 lru = "0.6.0"
 mio = "0.7.6"
-mio-named-pipes = "0.1.6"
 mysql_common = "0.26.0"
 native-tls = "0.2"
 pem = "0.8.1"
@@ -50,3 +49,6 @@ path = "src/lib.rs"
 
 [profile.bench]
 debug = true
+
+[patch.crates-io]
+tokio = { git = "https://github.com/udoprog/tokio", branch = "named-pipes" }
